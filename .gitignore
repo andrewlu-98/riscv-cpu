@@ -1,0 +1,12 @@
+# Simulation
+*.vvp
+*.vcd
+*.fst
+
+# Apio/nextpnr build output
+_build/
+.apio/
+hardware/
+
+# Editor
+.vscode/

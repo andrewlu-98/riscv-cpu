@@ -1,0 +1,8 @@
+set_frequency red 6.0
+set_io red 41
+set_io b5 26
+set_io b4 38
+set_io b3 42
+set_io b2 36
+set_io b1 43
+set_io b0 34
