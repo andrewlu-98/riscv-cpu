@@ -1,13 +1,14 @@
-# Single-Cycle RV32I CPU
+# Single-Cycle RISC-V CPU
 
 A single-cycle RISC-V CPU implemented in SystemVerilog, 
 simulated with Icarus Verilog/GTKWave and deployed to an UPduino v3.1 
-(iCE40 UP5K) FPGA. Architecture will be expanded to be pipelined.
+(iCE40 UP5K) FPGA. Architecture is currently being expanded to a 5-stage
+pipelined RISC-V CPU.
 
 ## Features
 - RV32I base integer instruction set (R/I/S/B formats)
-- Single-cycle datapath following the Patterson & Hennessy design
-- Verified in simulation and running on real FPGA hardware
+- Single-cycle datapath implemented according to "Computer Organization and Design" by David A. Patterson and John L. Hennessy
+- Verified in simulation and demonstrated functionality on FPGA
 
 ## Architecture
 ![Datapath diagram](docs/images/datapath.png)
