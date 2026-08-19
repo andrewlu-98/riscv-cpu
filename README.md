@@ -6,11 +6,11 @@ simulated with Icarus Verilog/GTKWave and deployed to an UPduino v3.1
 pipelined RISC-V CPU.
 
 ## Features
-- RV32I base integer instruction set (R/I/S/B formats)
+- RV32I instruction set (R/I/S/B formats)
 - Single-cycle datapath implemented according to "Computer Organization and Design" by David A. Patterson and John L. Hennessy
-- Verified in simulation and demonstrated functionality on FPGA
+- Verified through waveform analysis and demonstrated functionality on FPGA with LED outputs
 
-## Architecture
+## Architecture of Single-Cycle RISC-V CPU
 ![Datapath diagram](docs/images/datapath.png)
 
 ## Getting Started
