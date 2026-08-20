@@ -10,7 +10,7 @@ pipelined RISC-V CPU.
 - Single-cycle datapath implemented according to "Computer Organization and Design" by David A. Patterson and John L. Hennessy
 - Verified through waveform analysis and demonstrated functionality on FPGA with LED outputs
 
-## Architecture of Single-Cycle RISC-V CPU
+## Architecture
 ![Datapath diagram](docs/images/datapath.png)
 
 ## Getting Started
@@ -32,7 +32,7 @@ apio upload
 ![CPU running on hardware](docs/images/demo.gif)
 
 ## Challenges / Lessons Learned
-Most of the debugging process took place during top module simulation and deployment onto the FPGA. In hindsight, all of the issues encountered during the top module simulation could've been avoided with a deep understanding of the RTL design, especially dealing with how data is transferred from data memory to the register file when loading words and how data is transferred in the opposite direction when storing words.
+Most of the debugging process took place during top module simulation and deployment onto the FPGA. In hindsight, all of the issues encountered during the top module simulation could've been avoided with a deep understanding of the RTL design, especially dealing with how data is transferred from data memory to the register file when loading words (with the immediate mimicking a pointer) and how data is transferred in the opposite direction when storing words. Cramming the CPU onto the FPGA required moving some assign statements into clocked blocks to decrease LUTs used.
 
 ## License
 MIT
