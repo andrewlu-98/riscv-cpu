@@ -31,11 +31,16 @@ The waveform displays the successful execution of a series of instructions writt
 apio build
 apio upload
 ```
-https://github.com/user-attachments/assets/a09e4587-7cce-45c5-af69-07f7342c7be1
+https://github.com/user-attachments/assets/baee744b-ccb3-421a-a821-c558eb897a09
 
-https://github.com/user-attachments/assets/008e4de1-e207-48ad-b6bf-13d200dc7496
+The video above displays the output of 6 LEDs mapped to the CPU's writeback multiplexer (mux_from_data_top), showing the computed values being written back into the register file. After 3 clock cycles of doing nothing and resetting, the CPU steps through R, I, and L type instructions predetermined in the instruction memory. For instance, the first LED pattern correctly outputs the instruction at mem[4], which executes add x13, x16, x25 and instantly outputs 001011 (11) as expected from the stored values of 6 and 5 in the read registers x16 and x25, respectively. In the final two clock cycles, the CPU executes two L-Type instructions, taking values from the data memory and displaying the preset values of 56 (111000) and 57 (111001).
 
-https://github.com/user-attachments/assets/13fc2fc4-7bb1-4b40-970e-0a70c76b5746
+https://github.com/user-attachments/assets/79e45d1c-5ee0-43f8-9947-7b15e7aad049
+
+The 6 LEDs are now mapped to read_data2_top (the data being stored), where the CPU outputs two consecutive sw (store word) instructions. The LEDs correctly display values extracted from registers x15 and x14, which are 30 (011110) and 20 (010100), respectively.
+
+https://github.com/user-attachments/assets/527aa49d-5643-4116-8128-c9413cd19a5f
+
 
 ## Challenges / Lessons Learned
 As someone with no prior experience with computer architecture, starting this project felt pretty daunting until I found the right resources that I could gradually follow. After implementing each submodule and verifying them with their testbenches, most of the debugging process took place during top module simulation and deployment onto the FPGA. Though most issues encountered during the top module implementation & simulation could've been avoided with a deeper understanding of the RTL design, these gaps forced me to recognize how data is transferred from data memory to the register file when loading words (with the immediate mimicking a pointer) and how data is transferred in the opposite direction when storing words. This project has proved the importance of working through RTL design & implementation with a concrete understanding of every connection. 
