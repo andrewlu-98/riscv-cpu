@@ -1,3 +1,5 @@
+
+
 # Single-Cycle RISC-V CPU
 
 A single-cycle RISC-V CPU implemented in SystemVerilog, 
@@ -29,6 +31,10 @@ The waveform displays the successful execution of a series of instructions writt
 apio build
 apio upload
 ```
+<video width="700" controls autoplay loop muted>
+  <source src="docs/videos/R-I-L-Types.MOV" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 ![CPU running on FPGA](docs/videos/R-I-L-Types.MOV)
 ![CPU running on FPGA](docs/videos/S-Type.MOV)
 ![CPU running on FPGA](docs/videos/B-Type.MOV)
