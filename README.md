@@ -29,7 +29,9 @@ The waveform displays the successful execution of a series of instructions writt
 apio build
 apio upload
 ```
-![CPU running on hardware](docs/images/demo.gif)
+![CPU running on FPGA](docs/videos/R-I-L-Types.MOV)
+![CPU running on FPGA](docs/videos/S-Type.MOV)
+![CPU running on FPGA](docs/videos/B-Type.MOV)
 
 ## Challenges / Lessons Learned
 As someone with no prior experience with computer architecture, starting this project felt pretty daunting until I found the right resources that I could gradually follow. After implementing each submodule and verifying them with their testbenches, most of the debugging process took place during top module simulation and deployment onto the FPGA. Though most issues encountered during the top module implementation & simulation could've been avoided with a deeper understanding of the RTL design, these gaps forced me to recognize how data is transferred from data memory to the register file when loading words (with the immediate mimicking a pointer) and how data is transferred in the opposite direction when storing words. This project has proved the importance of working through RTL design & implementation with a concrete understanding of every connection. 
