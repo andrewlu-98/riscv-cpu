@@ -32,7 +32,9 @@ apio build
 apio upload
 ```
 https://github.com/user-attachments/assets/a09e4587-7cce-45c5-af69-07f7342c7be1
+
 https://github.com/user-attachments/assets/008e4de1-e207-48ad-b6bf-13d200dc7496
+
 https://github.com/user-attachments/assets/13fc2fc4-7bb1-4b40-970e-0a70c76b5746
 
 ## Challenges / Lessons Learned
